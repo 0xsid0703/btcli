@@ -15,7 +15,7 @@ from bittensor_cli.src.bittensor.utils import (
 )
 
 
-def _shorten(account: str | None) -> str:
+def _shorten(account: Optional[str]) -> str:
     """Shorten an account address for display."""
     if not account:
         return "-"
